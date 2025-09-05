@@ -1,0 +1,15 @@
+node_modules/
+lerna-debug.log
+dist/
+.DS_Store
+.ghpages-artifact/
+.eslintcache
+!.envrc
+.vercel
+.env*.local
+**/.vitepress/dist
+**/.vitepress/cache
+react-native/**/*.js
+react-native/**/*.d.ts
+web/**/*.js
+web/**/*.d.ts
