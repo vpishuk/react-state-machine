@@ -9,7 +9,5 @@ dist/
 .env*.local
 **/.vitepress/dist
 **/.vitepress/cache
-react-native/**/*.js
-react-native/**/*.d.ts
-web/**/*.js
-web/**/*.d.ts
+src/**/*.js
+src/**/*.d.ts

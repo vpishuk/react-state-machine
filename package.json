@@ -2,36 +2,18 @@
     "author": "Victor Pishuk <victor.pishuk@gmail.com>",
     "type": "module",
     "bugs": {
-        "url": "https://github.com/vpishuk/react-query-firebase/issues"
+        "url": "https://github.com/vpishuk/react-state-machine/issues"
     },
     "peerDependencies": {
-        "@react-native-firebase/analytics": "^23.x.x",
-        "@react-native-firebase/app": "^23.x.x",
-        "@react-native-firebase/auth": "^23.x.x",
-        "@react-native-firebase/crashlytics": "^23.x.x",
-        "@react-native-firebase/firestore": "^23.x.x",
-        "@react-native-firebase/installations": "^23.x.x",
-        "@react-native-firebase/remote-config": "^23.x.x",
-        "@tanstack/react-query": "^5.x.x",
-        "firebase": "^11.x.x || ^12.x.x",
         "react": "^18.x.x || ^19.x.x"
     },
     "publishConfig": {
         "access": "public"
     },
-    "description": "This module offers react hooks to work with Firebase on react-native and web platforms",
+    "description": "This module offers react hooks to work with a simple state machine",
     "devDependencies": {
         "@laverve/eslint-utils": "^5.3.1",
-        "@react-native-firebase/analytics": "^23.0.1",
-        "@react-native-firebase/app": "23.0.1",
-        "@react-native-firebase/auth": "^23.0.1",
-        "@react-native-firebase/crashlytics": "^23.0.1",
-        "@react-native-firebase/firestore": "^23.0.1",
-        "@react-native-firebase/installations": "^23.0.1",
-        "@react-native-firebase/remote-config": "^23.0.1",
-        "@tanstack/react-query": "^5.85.3",
         "@types/react": "^19.1.10",
-        "firebase": "^12.1.0",
         "husky": "^9.1.7",
         "lint-staged": "^16.1.5",
         "prettier": "^3.6.2",
@@ -42,23 +24,22 @@
         "typescript": "^5.9.2",
         "vitepress": "^1.6.4"
     },
-    "homepage": "https://github.com/vpishuk/react-query-firebase",
+    "homepage": "https://github.com/vpishuk/react-state-machine",
     "keywords": [
-        "firebase",
+        "state machine",
         "react",
         "hooks",
         "react-native"
     ],
     "license": "MIT",
-    "name": "react-query-firebase",
+    "name": "react-state-machine",
     "repository": {
         "type": "git",
-        "url": "https://github.com/vpishuk/react-query-firebase.git"
+        "url": "https://github.com/vpishuk/react-state-machine.git"
     },
+    "main": "./src/index.js",
     "files": [
-        "./web/",
-        "./react-native/",
-        "./types",
+        "./src/",
         "package.json",
         "package-lock.json",
         "README.md",
@@ -75,5 +56,5 @@
         "docs:build": "vitepress build docs",
         "docs:preview": "vitepress preview docs"
     },
-    "version": "2.12.1"
+    "version": "1.0.0"
 }

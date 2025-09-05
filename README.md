@@ -1,45 +1,21 @@
-[![Release Train](https://github.com/vpishuk/react-query-firebase/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/vpishuk/react-query-firebase/actions/workflows/main.yaml)
+[![Release Train](https://github.com/vpishuk/react-state-machine/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/vpishuk/react-state-machine/actions/workflows/main.yaml)
 
-# react-query-firebase
+# react-state-machine
 
-This module offers a set of hooks to work with [Firebase](https://firebase.google.com/) platorrm.
+This module offers a hook that implements a state machine.
 
 ## Installation
 
 Run the following command to install:
 
 ```
-npm i react-query-firebase @tanstack/react-query --save
+npm i react-state-machine --save
 ```
 
-## Basic Example
-
-```jsx
-import { useQuery, FirebaseContextProvider } from "react-query-firebase";
-
-const firebaseConfig = {};
-export const App = () => {
-    const [queryClient] = useState(() => new QueryClient({ defaultOptions: { queries: { throwOnError: true } } }));
-
-    return (
-        <QueryClientProvider client={queryClient}>
-            <FirebaseContextProvider options={firebaseConfig}>
-                <ChildComponent />
-            </FirebaseContextProvider>
-        </QueryClientProvider>
-    );
-};
-
-export const ChildComponent = () => {
-    const { data, isFetching } = useQuery({});
-
-    return <div>{JSON.stringify(data)}</div>;
-};
-```
 
 ## Documentation
 
-1. [All docs](https://vpishuk.github.io/react-query-firebase).
+1. [All docs](https://vpishuk.github.io/react-state-machine).
 
 ## Contribution guidelines
 
